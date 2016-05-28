@@ -1,3 +1,6 @@
+# One of the possible usage of the metaclass is creating dynamic attributes
+#
+
 
 class AttributeMultiplier(type):
     def __init__(cls, what, bases, attrs_dict):
@@ -11,7 +14,7 @@ class AttributeMultiplier(type):
 
 class MyKlass(object):
 
-    __metaclass__ =  AttributeMultiplier
+    __metaclass__ = AttributeMultiplier
 
     def some_method(self):
         print("Inside some_method")

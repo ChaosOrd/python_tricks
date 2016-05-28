@@ -1,3 +1,6 @@
+# Metaclass can also alter the behavior of a class when the object is created
+
+
 class MyMeta(type):
     def __call__(cls, *args):
         print '__call__ of ', str(cls)

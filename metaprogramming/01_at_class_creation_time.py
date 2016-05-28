@@ -1,3 +1,7 @@
+# The class of a class is called a metaclass
+# Here is how you define a custom metaclass
+
+
 class MyMeta(type):
     def __new__(mcs, name, bases, dct):
         print '-----------------------------------'
