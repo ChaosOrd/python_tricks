@@ -1,3 +1,5 @@
+# Generators are lazy evaluated functions
+
 
 def frange(start, stop, increment):
     x = start

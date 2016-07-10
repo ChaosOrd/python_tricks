@@ -5,11 +5,11 @@ if __name__ == '__main__':
     second_list = ['a', 'b', 'c', 'd', 'e']
     zipped = zip(first_list, second_list)
     print('Zipped:')
-    for number, letter in zipped:
-        print('The number is: {}, The letter is: {}'.format(number, letter))
+    print(zipped)
 
     print('IZipped')
     izipped = izip(first_list, second_list)
+    print(izipped)
     for number, letter in izipped:
         print('The number is: {}, The letter is: {}'.format(number, letter))
 

@@ -1,3 +1,5 @@
+# You should never pass mutable objects as lists
+
 
 def some_func(arr=[]):
     arr.append('4')
