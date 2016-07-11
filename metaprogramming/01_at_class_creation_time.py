@@ -4,6 +4,13 @@
 
 class MyMeta(type):
     def __new__(mcs, name, bases, dct):
+        """
+        Called before the object (MyKlass is created)
+        :param name:
+        :param bases:
+        :param dct:
+        :return:
+        """
         print '-----------------------------------'
         print "Allocating memory for class", name
         print mcs
@@ -12,6 +19,12 @@ class MyMeta(type):
         return super(MyMeta, mcs).__new__(mcs, name, bases, dct)
 
     def __init__(cls, name, bases, dct):
+        """
+        Called after the object (MyKlass is created)
+        :param name:
+        :param bases:
+        :param dct:
+        """
         print '-----------------------------------'
         print "Initializing class", name
         print cls
